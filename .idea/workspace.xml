@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f049c2ae-66eb-4f1f-8b59-d82d3192e5a6" name="Changes" comment="Task two">
-      <change afterPath="$PROJECT_DIR$/src/task/three/average/Average.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/three/employee/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,7 @@
       <workItem from="1682949568759" duration="3158000" />
       <workItem from="1683029976235" duration="4749000" />
       <workItem from="1683445651322" duration="7000" />
-      <workItem from="1683886631862" duration="2493000" />
+      <workItem from="1683886631862" duration="3136000" />
     </task>
     <task id="LOCAL-00001" summary="add task one">
       <created>1681373866701</created>
