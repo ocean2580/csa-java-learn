@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f049c2ae-66eb-4f1f-8b59-d82d3192e5a6" name="Changes" comment="add task one">
-      <change afterPath="$PROJECT_DIR$/src/task/Two.java" afterDir="false" />
+    <list default="true" id="f049c2ae-66eb-4f1f-8b59-d82d3192e5a6" name="Changes" comment="Task two">
+      <change afterPath="$PROJECT_DIR$/src/task/three/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/three/Compute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/three/Divide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/three/Multiply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/three/Subtract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/three/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/three/UseCompute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
     </list>
@@ -17,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,20 +57,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Two">
-    <configuration name="Circle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="temp.Circle" />
-      <module name="csa-junior-learn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="temp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.task.three.Test">
     <configuration name="Employee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="temp.Employee" />
       <module name="csa-junior-learn" />
@@ -116,13 +110,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="task.three.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task.three.Test" />
+      <module name="csa-junior-learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task.three.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Two" />
+        <item itemvalue="Application.task.three.Test" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Two" />
         <item itemvalue="Application.MyPoint" />
         <item itemvalue="Application.Employee" />
-        <item itemvalue="Application.Circle" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +148,9 @@
       <workItem from="1682938596532" duration="106000" />
       <workItem from="1682938883890" duration="505000" />
       <workItem from="1682949568759" duration="3158000" />
-      <workItem from="1683029976235" duration="4109000" />
+      <workItem from="1683029976235" duration="4749000" />
+      <workItem from="1683445651322" duration="7000" />
+      <workItem from="1683886631862" duration="710000" />
     </task>
     <task id="LOCAL-00001" summary="add task one">
       <created>1681373866701</created>
@@ -150,14 +159,41 @@
       <option name="project" value="LOCAL" />
       <updated>1681373866701</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="rename">
+      <created>1683034317970</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683034317970</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Task two">
+      <created>1683034404179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683034404179</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add task one" />
-    <option name="LAST_COMMIT_MESSAGE" value="add task one" />
+    <MESSAGE value="rename" />
+    <MESSAGE value="Task two" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task two" />
   </component>
 </project>
