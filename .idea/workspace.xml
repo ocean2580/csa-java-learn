@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f049c2ae-66eb-4f1f-8b59-d82d3192e5a6" name="Changes" comment="Task two">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task/five/DBUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task/five/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task/five/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task/five/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task/five/mysql-connector-j-8.0.32.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csa-junior-learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/csa-junior-learn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task/five/sort/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +160,7 @@
       <workItem from="1685073446712" duration="1818000" />
       <workItem from="1685527700937" duration="1084000" />
       <workItem from="1685844618882" duration="619000" />
-      <workItem from="1685848483808" duration="6164000" />
+      <workItem from="1685848483808" duration="6468000" />
     </task>
     <task id="LOCAL-00001" summary="add task one">
       <created>1681373866701</created>
