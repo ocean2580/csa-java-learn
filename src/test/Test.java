@@ -1,99 +1,57 @@
 package test;
-import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.Scanner;
+//小数转换为分数
+//1、输入的小数包括整数部分、小数点和小数部分；
+//整数部分和小数部分最多有7位数字；整数部分可以为0，若整数部分大于等于1，则其最高位不为0；
+//小数部分的末尾数字不为零。
+//2、输出的分数应为最简分数，由三个数字组t成：
+//第一个数字代表整数部分（若分数小于1，则为0，否则输出的整数的最高位不为0），
+//第二个数字代表分子，
+//第三个数字代表分母，分子比分母小且不能再约分。
 
-public class Test {
-    static Test test;
-    public static void main(String[] args){
-        int x,i=0,k=0;
-        int[] a=new int[10];
-        String result;
-        test=new Test();
-        Scanner scan = new Scanner(System.in);
-        x=scan.nextInt();
-        scan.close();
-
-        if (x==40585) {
-            System.out.println("40585,4!+0!+5!+8!+5!=40585\n" +
-                    "Yes");
-            System.exit(1);
-        }
-
-        if (x==8000000) {
-            System.out.println("8000000,8!+0!+0!+0!+0!+0!+0!=40326\n" +
-                    "No");
-            System.exit(1);
-        }
-
-        if (x==32676) {
-            System.out.println("32676,3!+2!+6!+7!+6!=6488\n" +
-                    "No");
-            System.exit(1);
-        }
-
-        int guocheng=x;
-        while(guocheng!=0){
-            a[i]=guocheng%10;
-            guocheng=guocheng/10;
-            i++;
-            k++;
-        }
-        result=test.judge(k,a,x);
-        System.out.print(x+",");
+public class Test 
+{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String n = in.nextLine();  //n为输入的小数
+        Num num = new Num(n);
+        System.out.print(num);
+    }
+}
 
 
-        for(int j=0;j<=k-2;j++){
-            System.out.print(a[j]+"!+");
-        }
+class Num 
+{
+    private String zhenshu;
+    private String xiaoshu;
 
-        System.out.print(a[k-1]+"!="+test.shiji(k,a,x)+"\n");
-        System.out.print(result);
-
-
+    public Num(String num) {
+        String[] numSplit = num.split("\\.");
+        zhenshu = numSplit[0];
+        xiaoshu = numSplit[1];
     }
 
-
-
-    public String judge(int k,int[] a,int x){
-        test=new Test();
-        if(k==1&& test.jiecheng(a[0])==x){
-            return "Yes";
+    private int find(int a, int b) {
+        if (a == 0) {
+            return b;
         }
-        else{
-            int sum=0;
-            for(int i=0;i<k;i++){
-                sum=sum+test.jiecheng(a[i]);
-            }
-            if(sum==x){
-                return "Yes";
-            }
-        }
-        return "No";
+        return find(b % a, a);
     }
-    public int shiji(int k,int[] a,int x){
-        test=new Test();
-        if(k==1){
-            return test.jiecheng(a[0]);
-        }
-        else{
-            int sum=0;
-            for(int i=0;i<k;i++){
-                sum=sum+test.jiecheng(a[i]);
-            }
 
-            return sum;
-
+    @Override
+    public String toString() {
+        int i = xiaoshu.length();
+        int fenmu = 1;
+        for(int j = 0 ;j<i;j++) {
+            fenmu *=10;
         }
-    }
-    public int jiecheng(int num){
-        int jieguo=1;
-        if(num==0){
-            return jieguo;
+        int fenzi = Integer.parseInt(xiaoshu);
+        while (find(fenzi, fenmu) != 1) {
+            int gys = find(fenzi, fenmu);
+            fenzi /= gys;
+            fenmu /= gys;
         }
-        for(int i=num;i>=1;i--){
-            jieguo=jieguo*i;
-        }
-        return jieguo;
+        return zhenshu + " " + fenzi + " " + fenmu;
     }
 }
